@@ -96,7 +96,6 @@ model.fit(X_train,y_train,batch_size=batch_size,epochs=epochs,verbose=2,validati
 score = model.evaluate(X_test, y_test, verbose=0)
 print('Test loss:', score)
 
-'''
 X=[]
 y=[]
 
@@ -122,4 +121,4 @@ with open("result.csv","a+",newline='') as file_name:
     csv_writer.writerow(['ID','Age'])
     for i in range(0,len(y_pred)):
         csv_writer.writerow([int(i+1),float(y_pred[i])])
-'''
+        
